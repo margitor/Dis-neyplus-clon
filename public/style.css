@@ -10,11 +10,11 @@ body {
 
 header {
     height: 0;
-    width: 100vw;
+    max-width: 1921px ;
 }
 nav {
     height: 70px;
-    width: 100vw;
+    max-width: 1921px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -51,23 +51,25 @@ nav span:hover {
     color:#000000cc ;
 }
 .hero {
-    width: 100vw;
-    min-height: 100vh ;
+    max-width: 1921px;
+    height: 100vh ;
     background-image: url(images/main-img.jpg);
     background-size: cover;
+    padding: 5.6vh;
+    display: flex;
+    align-items: center;
 }
 .hero-container {
     min-height: 100vh;
 }
 .container-subs {
-    max-width: 640px;
+    max-width: 700px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    padding-left: 
 }
 .container-subs h3 {
     font-size: 28px;
@@ -79,37 +81,43 @@ nav span:hover {
 .container-subs img {
     width: 400px;
     height: 163.42px;
+    padding: 10px;
 }
 .container-btn {
-    width: 510.56px;
+    width: 640px;
     height: 254px;
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    list-style: none;
 }
 
 .btn-subs {
     width: 640px;
-    height: 68px;
+    height: auto;
     background-color: #0063E5;
     margin: 0px 0px 20px;
     padding: 20px 33px;
     border-radius: 3px;
     text-decoration: none;
+    text-align: center;
 }
-.btn-subs span {
+.btn-subs a {
     font-size: 18px;
     color:#F9F9F9;
     margin: 3px 0px 0px;
     line-height: 25px;
+    text-decoration: none;
 }
 #p-nota {
     font-size: 12px;
     color: #C0C0C0;
     margin: 0px 0px 24px;
     text-align: center;
+    line-height: 22px;
+    width: 590px;
 }
 #span-aclaracion {
     font-size: 20px;
@@ -121,95 +129,95 @@ nav span:hover {
     font-size: 18px;
     color: #C0C0C0;
     margin: 0px 0px 24px;
+    line-height:25px ;
+    text-align: center;
 }
 .container-pantallas {
-    width: 100vw;
-    height: 100vh;
+    max-width: 1921px;
+    height: auto;
+    padding: 5.6vh;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
 }
 .pantallas-img {
-    width: 640px;
-    height: 512px;
-    padding-left: 28px;
+    max-width: 852px;
+    min-height: 682px;
 }
 .pantallas-img img {
-    width: 639px;
-    height: 511px;
+    max-width: 852px;
+    min-height: 682px;
 }
 .pantallas-texto {
-    width: 644px;
-    height: 244px;
-    padding: 0px 28px;
+    max-width: 852px;
+    max-height: 192px;
+    padding: 0px 38px;
 }
 .pantallas-texto h2 {
     font-size: 40px;
     color: #F9F9F9;
     margin: 0px 0px 24px;
-    line-height: 25px;
+    line-height: 30px;
 }
 .pantallas-texto p {
     font-size: 20px;
     color: #C0C0C0;
-    margin: 0px 0px 20px;
-    line-height: 25px;
+    margin: 0px 0px 24px;
+    line-height: 30px;
 }
 .container-combo {
-    width: 100vw;
-    height: 100vh;
+    max-width: 1921px;
+    height: auto;
+    padding: 5.6vh;
     display: flex;
     align-items: center;
 }
 .combo-texto {
-    width: 639px;
-    height: 184px;
-    padding: 0px 28px;
+    width: 852px;
+    height: 160px;
+    padding: 0px 38px;
 }
 .combo-texto p {
     font-size: 18px;
     margin: 0px 0px 20px;
     color: #C0C0C0;
-    line-height: 25px;
+    line-height: 30px;
 }
-.combo-texto a {
-    width: 360px;
-    height: 60px;
+.btn-combo {
+    max-width: 360px;
+    max-height: 60px;
     background-color: #0063E5;
-    margin: 0px 0px 20px;
-    padding: 16.5px 24px;
-    text-decoration: none;
-    line-height: 25px;
+    padding: 16px 24px;
+    text-align: center;
 }
-.combo-texto a span {
+.btn-combo a {
     color: #F9F9F9;
     font-size: 18px;
-    margin: 3px 0px 0px;
-    line-height: 25px;
+    line-height: 30px;
+    text-decoration: none;
 }
 .combo-img {
-    width: 640px;
-    height: 512px;
-    padding-right: 28px;
+    max-width: 852px;
+    max-height: 715px;
 }
 .combo-img img {
-    width: 639px;
-    height: 511px;
+    width: 852px;
+    height: 715px;
 }
 .container-descarga {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(images/reyleon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position:center ;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    max-width: 1921px;
+    height: auto;
+    padding: 5.6vh;
+}
+.img-leon img {
+    width: 1705px;
+    height: 994px;
 }
 .descarga-texto {
-    width: 640px;
+    max-width: 788px;
     height: auto;
     padding: 0px 28px;
+    line-height: 30px;
 }
 .descarga-texto h3 {
     font-size: 28px;
@@ -222,8 +230,8 @@ nav span:hover {
     margin: 0px 0px 20px;
 }
 .container-dispositivos {
-    width: 100vw;
-    height: 100vh;
+    max-width: 1921px;
+    height: auto;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -261,13 +269,13 @@ nav span:hover {
     margin: 0px 0px 20px;
 }
 footer {
-    width: calc(100vw - 1506px);
+    max-width: 1921px;
     height: 194px;
     padding: 26px 8px;
     margin: 0px;
 }
 .footer-links {
-    width: 100vw;
+    max-width: 1921px;
 }
 .footer-img {
     display: flex;
@@ -293,7 +301,7 @@ footer {
     padding: 8px 12px;
 }
 .footer-nota {
-    width: 100vw;
+    max-width:1921px;
     height: 88px;
 }
 .footer-nota p {
