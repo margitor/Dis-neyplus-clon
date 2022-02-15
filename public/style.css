@@ -10,11 +10,11 @@ body {
 
 header {
     height: 0;
-    max-width: 1921px ;
+    max-width: 1920px;
 }
 nav {
     height: 70px;
-    max-width: 1921px;
+    max-width: 1920px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -51,13 +51,14 @@ nav span:hover {
     color:#000000cc ;
 }
 .hero {
-    max-width: 1921px;
+    max-width: 1920px;
     height: 100vh ;
     background-image: url(images/main-img.jpg);
-    background-size: cover;
+    background-size: contain;
     padding: 5.6vh;
     display: flex;
     align-items: center;
+    background-repeat: no-repeat;
 }
 .hero-container {
     min-height: 100vh;
@@ -95,7 +96,7 @@ nav span:hover {
 }
 
 .btn-subs {
-    width: 640px;
+    width: 600px;
     height: auto;
     background-color: #0063E5;
     margin: 0px 0px 20px;
@@ -133,7 +134,7 @@ nav span:hover {
     text-align: center;
 }
 .container-pantallas {
-    max-width: 1921px;
+    max-width: 1920px;
     height: auto;
     padding: 5.6vh;
     box-sizing: border-box;
@@ -142,15 +143,15 @@ nav span:hover {
 }
 .pantallas-img {
     max-width: 852px;
-    min-height: 682px;
+    max-height: 682px;
 }
 .pantallas-img img {
     max-width: 852px;
-    min-height: 682px;
+    max-height: 682px;
 }
 .pantallas-texto {
     max-width: 852px;
-    max-height: 192px;
+    height: auto;
     padding: 0px 38px;
 }
 .pantallas-texto h2 {
@@ -166,7 +167,7 @@ nav span:hover {
     line-height: 30px;
 }
 .container-combo {
-    max-width: 1921px;
+    max-width: 1920px;
     height: auto;
     padding: 5.6vh;
     display: flex;
@@ -205,19 +206,30 @@ nav span:hover {
     height: 715px;
 }
 .container-descarga {
-    max-width: 1921px;
+    max-width: 1920px;
     height: auto;
     padding: 5.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.img-leon img {
-    width: 1705px;
-    height: 994px;
+.img-leon {
+    background-image: url(images/reyleon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1800px;
+    height: 900px;
 }
 .descarga-texto {
     max-width: 788px;
     height: auto;
     padding: 0px 28px;
     line-height: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 45%;
 }
 .descarga-texto h3 {
     font-size: 28px;
@@ -230,24 +242,25 @@ nav span:hover {
     margin: 0px 0px 20px;
 }
 .container-dispositivos {
-    max-width: 1921px;
+    max-width: 1920px;
     height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 5.6vh;
 }
 .container-dispositivos h2 {
     font-size: 40px;
     color: #F9F9F9;
     text-align: center;
+    line-height: 50px;
 }
 .container-cards {
-    width: 1361.34px;
-    height: 480.16;
+    max-width: 1800px;
+    height: 535px;
     display: flex;
+    justify-content: center;
 }
 .card-dispositivo {
-    width: 340.33px;
-    height: 480.16px;
+    max-width: 450px;
+    height: 535px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,8 +268,8 @@ nav span:hover {
     padding: 12px;
 }
 .card-dispositivo img {
-    width: 316.33px;
-    height: 158.16px;
+    width: 400px;
+    height: 200px;
 }
 .card-dispositivo h3 {
     font-size: 28px;
@@ -267,9 +280,10 @@ nav span:hover {
     font-size: 18px;
     color: #C0C0C0;
     margin: 0px 0px 20px;
+    line-height: 28px;
 }
 footer {
-    max-width: 1921px;
+    max-width: 1920px;
     height: 194px;
     padding: 26px 8px;
     margin: 0px;
@@ -301,7 +315,7 @@ footer {
     padding: 8px 12px;
 }
 .footer-nota {
-    max-width:1921px;
+    max-width:1920px;
     height: 88px;
 }
 .footer-nota p {
@@ -310,4 +324,126 @@ footer {
     margin: 0px 0px 20px;
     line-height: 22px;
     text-align: center;
+}
+@media only screen and (min-width: 769px) and (max-width:1024px){
+    body {
+        font-size: 18px;
+    line-height: 28px;
+    }
+    .hero {
+        background-image: url(images/heroimg2.jfif);
+        background-position: cover;
+        padding: 40vw 5vw 10vw;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+    }
+    .hero-container {
+        position: relative;
+        bottom: 25%;
+        left: 10%;
+        min-height:100vh ;
+    }
+    .container-subs {
+        padding: 0;
+        height: 543px;
+    }
+    .container-subs h3 {
+        font-size: 24px;
+    }
+    .container-subs img {
+        width: 320px;
+        height: 130.73px;
+    }
+    .container-pantallas {
+        padding: 10vw 5vw;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .pantallas-img {
+        max-width: auto;
+        height: auto;
+    }
+    .pantallas-img img {
+        max-width: 453.61px;
+        height: auto;
+    }
+    .pantallas-texto {
+        max-width: 453.61px ;
+        height: auto;
+    }
+    .pantallas-texto h2 {
+        font-size: 28px;
+    }
+    .pantallas-texto p {
+        font-size: 18px;
+    }
+    .container-combo {
+        padding: 10vw 5vw;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .combo-texto {
+        max-width: 453.61px;
+        height: auto;
+        padding: 0;
+    }
+    .combo-texto p {
+        font-size: 16px;
+    }
+    .combo-img {
+        max-width: auto;
+        height: auto;
+    }
+    .combo-img img {
+        max-width: 453.61px;
+        height: auto;
+    }
+    .container-descarga {
+        padding: 10vw 5vw;
+        width: 100%;
+        height: auto;
+    }
+    .img-leon {
+        height: 564.47px;
+    }
+    .descarga-texto h3 {
+        font-size: 24px;
+    }
+    .descarga-texto p {
+        font-size: 16px;
+    }
+    .container-dispositivos {
+        padding: 10vw 5vw;
+        width: 100%;
+        height: auto;
+    }
+    .container-cards {
+        max-width: 1008px;
+        height: auto;
+    }
+    .card-dispositivo {
+        max-width: 232.8px;
+        height: 400.39px;
+        padding: 12px;
+    }
+    .card-dispositivo img {
+        max-width: 208.8px;
+        height: 104.39px;
+    }
+    .container-dispositivos h2 {
+        font-size: 28px;
+    }
+    .card-dispositivo h3 {
+        font-size: 24px;
+    }
+    .card-dispositivo p {
+        font-size: 16px;
+    }
 }
