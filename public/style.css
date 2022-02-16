@@ -325,7 +325,7 @@ footer {
     line-height: 22px;
     text-align: center;
 }
-@media only screen and (min-width: 769px) and (max-width:1024px){
+@media only screen and (max-width:1024px){
     body {
         font-size: 18px;
     line-height: 28px;
@@ -445,5 +445,75 @@ footer {
     }
     .card-dispositivo p {
         font-size: 16px;
+    }
+}
+@media only screen and (max-width:768px){
+    .hero {
+        width: 100%;
+        display: flex;
+    }
+    .hero-container {
+        max-width: 500px;
+    }
+    .container-pantallas {
+        display: flex;
+        flex-direction: column;
+        padding: 10vw 5vw;
+    }
+    .pantallas-img {
+        margin: 0px 0px 20px;
+    }
+    .pantallas-texto {
+        text-align: center;
+        margin: 0px 0px 20px;
+        max-width: 692px;
+    }
+    .pantallas-img img {
+        max-width: 692px;
+        height: auto;
+}
+    .container-combo {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10vw 2vw;
+        max-width: 700px ;
+    }
+    .combo-texto {
+        text-align: center;
+        margin: 0px 0px 20px;
+        max-width: 692px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .combo-img {
+        margin: 0px 0px 20px;
+    }
+    .combo-img img{
+        max-width: 680px;
+        height: auto;
+    }
+    .container-descarga {
+        padding: 10vw 2vw;
+        max-width: 700px ;
+    }
+    .img-leon {
+        background-image: url(images/reyLeon-MQ.png);
+        margin-bottom: 20px;
+        max-width: 680px;
+    }
+    .descarga-texto {
+        text-align: center;
+        margin: 0px 0px 20px;
+        max-width: 692px;
+        position: inherit;
+    }
+    .container-dispositivos {
+        padding: 10vw 2vw;
+        max-width: 700px ;
+    }
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
