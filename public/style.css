@@ -447,7 +447,7 @@ footer {
         font-size: 16px;
     }
 }
-@media only screen and (max-width:768px){
+@media only screen and (min-width:480px) and (max-width:768px){
     .hero {
         width: 100%;
         display: flex;
